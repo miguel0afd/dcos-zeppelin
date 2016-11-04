@@ -25,4 +25,6 @@ RUN tar xzvf zeppelin-0.6.2-bin-all.tgz
 WORKDIR /zeppelin-0.6.2-bin-all
 ADD zeppelin-env.sh conf/zeppelin-env.sh
 
-CMD ["bin/zeppelin.sh", "start"]
+ADD docker-entrypoint.sh /docker-entrypoint.sh
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
