@@ -62,12 +62,12 @@ You should now be able to visit zeppelin.your-url.com to view Zeppelin.
 
 ## Build image
 
-docker build docker -t <ImageName>
+docker build docker -t /<ImageName/>
 
 ## Manual test
 
-docker run -p 1234:8080 <ImageName>
+docker run -p 1234:8080 /<ImageName/>
 
 ## Access to docker
 
-docker exec -it <ContainerID> bash
+docker exec -it /<ContainerID/> bash
