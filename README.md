@@ -57,3 +57,17 @@ on a a public slave.
     `/etc/hosts` file.
 
 You should now be able to visit zeppelin.your-url.com to view Zeppelin.
+
+# Crossdata
+
+## Build image
+
+docker build docker -t <ImageName>
+
+## Manual test
+
+docker run -p 1234:8080 <ImageName>
+
+## Access to docker
+
+docker exec -it <ContainerID> bash
