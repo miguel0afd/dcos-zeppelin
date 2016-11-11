@@ -1,5 +1,5 @@
 #!/bin/bash -xe
-XD_VERSION=${XD_ZP_VERSION:=1.8.0-SNAPSHOT}
+XD_VERSION=${XD_ZP_VERSION:=1.7.0}
 
 echo "Installing Crossdata interpreter"
 

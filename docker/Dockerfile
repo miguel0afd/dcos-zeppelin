@@ -21,18 +21,18 @@ RUN update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/jav
 
 ## TO BE REMOVED ONCE CROSSDATA-ZEPPELIN HAS BEEN DEPLOYED IN MAVEN CENTRAL
 ###########################################################################
-RUN add-apt-repository ppa:andrei-pozolotin/maven3
+## RUN add-apt-repository ppa:andrei-pozolotin/maven3
 
-RUN apt-get update && \
-	apt-get install --yes \
-	git \
-	maven3
+## RUN apt-get update && \
+## 	apt-get install --yes \
+## 	git \
+## 	maven3
 
-RUN git clone https://github.com/jjlopezm/crossdata.git
-WORKDIR /crossdata
-RUN git checkout ZeppelinIntegration
-RUN mvn install -DskipUTs -DskipITs
-WORKDIR /
+## RUN git clone https://github.com/jjlopezm/crossdata.git
+## WORKDIR /crossdata
+## RUN git checkout ZeppelinIntegration
+## RUN mvn install -DskipUTs -DskipITs
+## WORKDIR /
 ############################################################################
 
 # zeppelin
